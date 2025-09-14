@@ -1,0 +1,194 @@
+2025-09-14 13:55:52.235 [main] INFO  com.tlias.TliasApplication-Starting TliasApplication using Java 24.0.1 with PID 10760 (C:\Users\ASUS\Desktop\Web03\tlias\target\classes started by ASUS in C:\Users\ASUS\Desktop\Web03)
+2025-09-14 13:55:52.236 [main] INFO  com.tlias.TliasApplication-No active profile set, falling back to 1 default profile: "default"
+2025-09-14 13:55:52.909 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-09-14 13:55:52.921 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-14 13:55:52.922 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-09-14 13:55:52.922 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-14 13:55:52.955 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-09-14 13:55:52.955 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 685 ms
+2025-09-14 13:55:53.327 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-09-14 13:55:53.343 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-09-14 13:55:53.348 [main] INFO  com.tlias.TliasApplication-Started TliasApplication in 1.424 seconds (process running for 2.144)
+2025-09-14 13:55:57.161 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-14 13:55:57.161 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-09-14 13:55:57.162 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-09-14 13:55:57.191 [http-nio-8080-exec-1] INFO  com.tlias.controller.DeptController-获取全部部门
+2025-09-14 13:55:57.203 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-09-14 13:55:57.501 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7850f06d
+2025-09-14 13:55:57.503 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-09-14 13:56:36.408 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-14 13:56:36.416 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-09-14 13:56:36.420 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-09-14 13:56:36.426 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-09-14 14:35:10.668 [main] INFO  com.tlias.TliasApplication-Starting TliasApplication using Java 24.0.1 with PID 20492 (C:\Users\ASUS\Desktop\Web03\tlias\target\classes started by ASUS in C:\Users\ASUS\Desktop\Web03)
+2025-09-14 14:35:10.670 [main] INFO  com.tlias.TliasApplication-No active profile set, falling back to 1 default profile: "default"
+2025-09-14 14:35:11.366 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-09-14 14:35:11.380 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-14 14:35:11.381 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-09-14 14:35:11.382 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-14 14:35:11.419 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-09-14 14:35:11.419 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 714 ms
+2025-09-14 14:35:11.809 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-09-14 14:35:11.822 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-09-14 14:35:11.827 [main] INFO  com.tlias.TliasApplication-Started TliasApplication in 1.487 seconds (process running for 2.143)
+2025-09-14 14:35:47.978 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-14 14:35:47.986 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-09-14 14:36:05.075 [main] INFO  com.tlias.TliasApplication-Starting TliasApplication using Java 24.0.1 with PID 13572 (C:\Users\ASUS\Desktop\Web03\tlias\target\classes started by ASUS in C:\Users\ASUS\Desktop\Web03)
+2025-09-14 14:36:05.076 [main] INFO  com.tlias.TliasApplication-No active profile set, falling back to 1 default profile: "default"
+2025-09-14 14:36:05.744 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-09-14 14:36:05.756 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-14 14:36:05.757 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-09-14 14:36:05.757 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-14 14:36:05.791 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-09-14 14:36:05.792 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 678 ms
+2025-09-14 14:36:06.160 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-09-14 14:36:06.175 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-09-14 14:36:06.180 [main] INFO  com.tlias.TliasApplication-Started TliasApplication in 1.381 seconds (process running for 2.034)
+2025-09-14 14:36:24.918 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-14 14:36:24.918 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-09-14 14:36:24.919 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-09-14 14:36:37.740 [http-nio-8080-exec-3] INFO  com.tlias.controller.EmpController-queryEmpByPage, pageNo:1, pageSize5
+2025-09-14 14:36:37.756 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-09-14 14:36:38.067 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72fde3f3
+2025-09-14 14:36:38.069 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-09-14 14:36:38.146 [http-nio-8080-exec-3] INFO  com.tlias.controller.EmpController-queryEmpByPage, resp:QueryEmpPagedResp(rows=[Emp(id=28, username=lizhong, password=123456, name=李忠, gender=1, phone=13309090028, job=5, salary=5000, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2007-01-01, deptId=3, createTime=2023-10-20T16:35:33, updateTime=2023-11-17T16:34:22, deptName=咨询部), Emp(id=27, username=lijun, password=123456, name=李俊, gender=1, phone=13309090027, job=2, salary=6600, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2004-01-01, deptId=2, createTime=2023-10-20T16:35:33, updateTime=2023-11-16T17:56:59, deptName=教研部), Emp(id=1, username=shinaian, password=123456, name=施耐庵, gender=1, phone=13309090001, job=4, salary=15000, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2000-01-01, deptId=2, createTime=2023-10-20T16:35:33, updateTime=2023-11-16T16:11:26, deptName=教研部), Emp(id=26, username=yanshun, password=123456, name=燕顺, gender=1, phone=13309090026, job=5, salary=5400, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2011-01-01, deptId=3, createTime=2023-10-20T16:35:33, updateTime=2023-11-08T22:12:46, deptName=咨询部), Emp(id=30, username=liyun, password=123456, name=李云, gender=1, phone=13309090030, job=null, salary=null, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2020-03-01, deptId=null, createTime=2023-10-20T16:35:33, updateTime=2023-10-20T16:36:31, deptName=null)], total=29)
+2025-09-14 14:45:41.021 [http-nio-8080-exec-5] INFO  com.tlias.controller.EmpController-queryEmpByPage, pageNo:2, pageSize:5
+2025-09-14 14:45:41.027 [http-nio-8080-exec-5] INFO  com.tlias.controller.EmpController-queryEmpByPage, resp:QueryEmpPagedResp(rows=[Emp(id=25, username=tongmeng, password=123456, name=童猛, gender=1, phone=13309090025, job=5, salary=4800, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2002-01-01, deptId=3, createTime=2023-10-20T16:35:33, updateTime=2023-10-20T16:36:23, deptName=咨询部), Emp(id=24, username=tongwei, password=123456, name=童威, gender=1, phone=13309090024, job=5, salary=5000, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2006-01-01, deptId=3, createTime=2023-10-20T16:35:33, updateTime=2023-10-20T16:36:21, deptName=咨询部), Emp(id=23, username=ruanji, password=123456, name=阮籍, gender=1, phone=13309090023, job=5, salary=5800, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2012-01-01, deptId=3, createTime=2023-10-20T16:35:33, updateTime=2023-10-20T16:36:19, deptName=咨询部), Emp(id=22, username=ruanxiaoqi, password=123456, name=阮小七, gender=1, phone=13309090022, job=5, salary=5500, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2016-01-01, deptId=3, createTime=2023-10-20T16:35:33, updateTime=2023-10-20T16:36:17, deptName=咨询部), Emp(id=21, username=ruanxiaowu, password=123456, name=阮小五, gender=1, phone=13309090021, job=5, salary=5200, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2015-01-01, deptId=3, createTime=2023-10-20T16:35:33, updateTime=2023-10-20T16:36:15, deptName=咨询部)], total=29)
+2025-09-14 14:46:06.623 [http-nio-8080-exec-7] INFO  com.tlias.controller.EmpController-queryEmpByPage, pageNo:3, pageSize:5
+2025-09-14 14:46:06.630 [http-nio-8080-exec-7] INFO  com.tlias.controller.EmpController-queryEmpByPage, resp:QueryEmpPagedResp(rows=[Emp(id=20, username=ruanxiaoer, password=123456, name=阮小二, gender=1, phone=13309090020, job=2, salary=10800, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2018-01-01, deptId=2, createTime=2023-10-20T16:35:33, updateTime=2023-10-20T16:36:13, deptName=教研部), Emp(id=19, username=gudasao, password=123456, name=顾大嫂, gender=2, phone=13309090019, job=2, salary=10500, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2008-01-01, deptId=2, createTime=2023-10-20T16:35:33, updateTime=2023-10-20T16:36:11, deptName=教研部), Emp(id=18, username=shiqian, password=123456, name=时迁, gender=1, phone=13309090018, job=2, salary=10200, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2015-01-01, deptId=2, createTime=2023-10-20T16:35:33, updateTime=2023-10-20T16:36:09, deptName=教研部), Emp(id=17, username=liying, password=12345678, name=李应, gender=1, phone=13309090017, job=1, salary=5800, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2015-03-21, deptId=1, createTime=2023-10-20T16:35:33, updateTime=2023-10-20T16:36:07, deptName=学工部), Emp(id=16, username=luzhishen, password=123456, name=鲁智深, gender=1, phone=13309090016, job=2, salary=9600, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2010-01-01, deptId=2, createTime=2023-10-20T16:35:33, updateTime=2023-10-20T16:36:05, deptName=教研部)], total=29)
+2025-09-14 14:47:22.636 [http-nio-8080-exec-10] INFO  com.tlias.controller.EmpController-queryEmpByPage, pageNo:3, pageSize:5
+2025-09-14 14:47:22.642 [http-nio-8080-exec-10] INFO  com.tlias.controller.EmpController-queryEmpByPage, resp:QueryEmpPagedResp(rows=[Emp(id=20, username=ruanxiaoer, password=123456, name=阮小二, gender=1, phone=13309090020, job=2, salary=10800, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2018-01-01, deptId=2, createTime=2023-10-20T16:35:33, updateTime=2023-10-20T16:36:13, deptName=教研部), Emp(id=19, username=gudasao, password=123456, name=顾大嫂, gender=2, phone=13309090019, job=2, salary=10500, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2008-01-01, deptId=2, createTime=2023-10-20T16:35:33, updateTime=2023-10-20T16:36:11, deptName=教研部), Emp(id=18, username=shiqian, password=123456, name=时迁, gender=1, phone=13309090018, job=2, salary=10200, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2015-01-01, deptId=2, createTime=2023-10-20T16:35:33, updateTime=2023-10-20T16:36:09, deptName=教研部), Emp(id=17, username=liying, password=12345678, name=李应, gender=1, phone=13309090017, job=1, salary=5800, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2015-03-21, deptId=1, createTime=2023-10-20T16:35:33, updateTime=2023-10-20T16:36:07, deptName=学工部), Emp(id=16, username=luzhishen, password=123456, name=鲁智深, gender=1, phone=13309090016, job=2, salary=9600, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2010-01-01, deptId=2, createTime=2023-10-20T16:35:33, updateTime=2023-10-20T16:36:05, deptName=教研部)], total=29)
+2025-09-14 14:47:28.049 [http-nio-8080-exec-2] INFO  com.tlias.controller.EmpController-queryEmpByPage, pageNo:null, pageSize:null
+2025-09-14 14:47:28.064 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because "pageNo" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because "pageNo" is null
+	at com.tlias.service.impl.EmpServiceImpl.queryEmpPaged(EmpServiceImpl.java:22)
+	at com.tlias.controller.EmpController.queryEmpPaged(EmpController.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2025-09-14 14:48:00.247 [http-nio-8080-exec-3] INFO  com.tlias.controller.EmpController-queryEmpByPage, pageNo:null, pageSize:null
+2025-09-14 14:48:33.882 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s619ms97µs300ns).
+2025-09-14 14:48:33.893 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because "pageNo" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because "pageNo" is null
+	at com.tlias.service.impl.EmpServiceImpl.queryEmpPaged(EmpServiceImpl.java:22)
+	at com.tlias.controller.EmpController.queryEmpPaged(EmpController.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2025-09-14 14:48:33.915 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-14 14:48:33.924 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-09-14 14:48:33.928 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-09-14 14:48:33.936 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-09-14 14:48:35.791 [main] INFO  com.tlias.TliasApplication-Starting TliasApplication using Java 24.0.1 with PID 7840 (C:\Users\ASUS\Desktop\Web03\tlias\target\classes started by ASUS in C:\Users\ASUS\Desktop\Web03)
+2025-09-14 14:48:35.792 [main] INFO  com.tlias.TliasApplication-No active profile set, falling back to 1 default profile: "default"
+2025-09-14 14:48:36.423 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-09-14 14:48:36.434 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-14 14:48:36.435 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-09-14 14:48:36.435 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-14 14:48:36.465 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-09-14 14:48:36.465 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 641 ms
+2025-09-14 14:48:36.819 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-09-14 14:48:36.834 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-09-14 14:48:36.840 [main] INFO  com.tlias.TliasApplication-Started TliasApplication in 1.329 seconds (process running for 1.951)
+2025-09-14 14:48:39.818 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-14 14:48:39.818 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-09-14 14:48:39.819 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-09-14 14:48:39.846 [http-nio-8080-exec-1] INFO  com.tlias.controller.EmpController-queryEmpByPage, pageNo:1, pageSize:10
+2025-09-14 14:48:44.231 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-09-14 14:48:44.527 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a25a247
+2025-09-14 14:48:44.528 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-09-14 14:48:44.587 [http-nio-8080-exec-1] INFO  com.tlias.controller.EmpController-queryEmpByPage, resp:QueryEmpPagedResp(rows=[Emp(id=28, username=lizhong, password=123456, name=李忠, gender=1, phone=13309090028, job=5, salary=5000, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2007-01-01, deptId=3, createTime=2023-10-20T16:35:33, updateTime=2023-11-17T16:34:22, deptName=咨询部), Emp(id=27, username=lijun, password=123456, name=李俊, gender=1, phone=13309090027, job=2, salary=6600, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2004-01-01, deptId=2, createTime=2023-10-20T16:35:33, updateTime=2023-11-16T17:56:59, deptName=教研部), Emp(id=1, username=shinaian, password=123456, name=施耐庵, gender=1, phone=13309090001, job=4, salary=15000, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2000-01-01, deptId=2, createTime=2023-10-20T16:35:33, updateTime=2023-11-16T16:11:26, deptName=教研部), Emp(id=26, username=yanshun, password=123456, name=燕顺, gender=1, phone=13309090026, job=5, salary=5400, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2011-01-01, deptId=3, createTime=2023-10-20T16:35:33, updateTime=2023-11-08T22:12:46, deptName=咨询部), Emp(id=30, username=liyun, password=123456, name=李云, gender=1, phone=13309090030, job=null, salary=null, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2020-03-01, deptId=null, createTime=2023-10-20T16:35:33, updateTime=2023-10-20T16:36:31, deptName=null), Emp(id=25, username=tongmeng, password=123456, name=童猛, gender=1, phone=13309090025, job=5, salary=4800, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2002-01-01, deptId=3, createTime=2023-10-20T16:35:33, updateTime=2023-10-20T16:36:23, deptName=咨询部), Emp(id=24, username=tongwei, password=123456, name=童威, gender=1, phone=13309090024, job=5, salary=5000, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2006-01-01, deptId=3, createTime=2023-10-20T16:35:33, updateTime=2023-10-20T16:36:21, deptName=咨询部), Emp(id=23, username=ruanji, password=123456, name=阮籍, gender=1, phone=13309090023, job=5, salary=5800, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2012-01-01, deptId=3, createTime=2023-10-20T16:35:33, updateTime=2023-10-20T16:36:19, deptName=咨询部), Emp(id=22, username=ruanxiaoqi, password=123456, name=阮小七, gender=1, phone=13309090022, job=5, salary=5500, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2016-01-01, deptId=3, createTime=2023-10-20T16:35:33, updateTime=2023-10-20T16:36:17, deptName=咨询部), Emp(id=21, username=ruanxiaowu, password=123456, name=阮小五, gender=1, phone=13309090021, job=5, salary=5200, image=https://web-framework.oss-cn-hangzhou.aliyuncs.com/2023/1.jpg, entryDate=2015-01-01, deptId=3, createTime=2023-10-20T16:35:33, updateTime=2023-10-20T16:36:15, deptName=咨询部)], total=29)
+2025-09-14 14:48:49.727 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-14 14:48:49.735 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-09-14 14:48:49.740 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-09-14 14:48:49.745 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
