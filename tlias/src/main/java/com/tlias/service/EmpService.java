@@ -1,9 +1,12 @@
 package com.tlias.service;
 
 
-import com.tlias.resp.QueryEmpPagedResp;
+import com.tlias.resp.QueryEmpResp;
+
+import java.time.LocalDate;
 
 public interface EmpService {
 
-    QueryEmpPagedResp queryEmpPaged(Integer pageNo, Integer pageSize);
+    QueryEmpResp queryEmp(Integer pageNo, Integer pageSize, String name,
+                          Integer gender, LocalDate begin, LocalDate end);
 }

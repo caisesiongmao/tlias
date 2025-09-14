@@ -4,6 +4,7 @@ import com.tlias.pojo.Emp;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Mapper
@@ -15,9 +16,8 @@ public interface EmpMapper {
      * @param pageSize
      * @return 当前页的员工信息
      */
-    @Select("select e.*, d.name deptName from emp e left join dept d " +
-            "on e.dept_id = d.id order by e.update_time desc limit #{offset}, #{pageSize}")
-    List<Emp> queryEmpPaged(Integer offset, Integer pageSize);
+    List<Emp> queryEmp(String name, Integer gender, LocalDate begin, LocalDate end,
+                       Integer offset, Integer pageSize);
 
     /**
      * 获取员工数量

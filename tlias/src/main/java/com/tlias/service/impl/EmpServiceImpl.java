@@ -2,12 +2,13 @@ package com.tlias.service.impl;
 
 import com.tlias.mapper.EmpMapper;
 import com.tlias.pojo.Emp;
-import com.tlias.resp.QueryEmpPagedResp;
+import com.tlias.resp.QueryEmpResp;
 import com.tlias.service.EmpService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Service
@@ -18,11 +19,12 @@ public class EmpServiceImpl implements EmpService {
     private EmpMapper empMapper;
 
     @Override
-    public QueryEmpPagedResp queryEmpPaged(Integer pageNo, Integer pageSize) {
+    public QueryEmpResp queryEmp(Integer pageNo, Integer pageSize, String name,
+                                 Integer gender, LocalDate begin, LocalDate end) {
         Integer offset = (pageNo - 1) * pageSize;
-        List<Emp> empList = empMapper.queryEmpPaged(offset, pageSize);
+        List<Emp> empList = empMapper.queryEmp(name, gender, begin, end, offset, pageSize);
         Integer total = empMapper.getCount();
-        QueryEmpPagedResp resp = new QueryEmpPagedResp();
+        QueryEmpResp resp = new QueryEmpResp();
         resp.setRows(empList);
         resp.setTotal(total);
         return resp;

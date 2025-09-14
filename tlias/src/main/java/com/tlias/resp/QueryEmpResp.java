@@ -10,7 +10,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class QueryEmpPagedResp {
+public class QueryEmpResp {
 
     private List<Emp> rows;
 
