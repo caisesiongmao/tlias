@@ -1,0 +1,37 @@
+# Maven构建产物
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# IDE配置文件（根据你使用的IDE添加，保留需要的）
+.idea/         # IntelliJ IDEA
+*.iml          # IDEA模块文件
+*.iws          # IDEA工作区文件
+*.ipr          # IDEA项目文件
+.classpath     # Eclipse类路径
+.project       # Eclipse项目文件
+.settings/     # Eclipse设置
+.vscode/       # VS Code配置
+*.sublime-*    # Sublime Text配置
+
+# 系统文件
+.DS_Store      # Mac系统
+Thumbs.db      # Windows系统
+
+# 日志文件
+logs/
+*.log
+
+# 临时文件
+tmp/
+temp/
+
+# 个人配置文件（如包含密码、密钥的文件）
+*.properties.local
+*.yml.local

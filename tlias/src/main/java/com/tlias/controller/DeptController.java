@@ -3,17 +3,10 @@ package com.tlias.controller;
 import com.tlias.pojo.Dept;
 import com.tlias.pojo.Result;
 import com.tlias.service.DeptService;
-import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
-
-import static org.springframework.web.bind.annotation.RequestMethod.GET;
-import static org.springframework.web.bind.annotation.RequestMethod.POST;
 @RequestMapping("/depts")
 @RestController
 @Slf4j
