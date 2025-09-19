@@ -6,8 +6,42 @@
 
     <select id="queryEmp" resultType="com.tlias.pojo.Emp">
         select e.*, d.name from emp e left join dept d on e.dept_id = d.id
-        where e.name like concat('%', #{name}, '%') and e.gender = #{gender}
-        and e.entry_date between #{begin} and #{end}
-        order by d.update_time desc limit #{offset}, #{pageSize};
+        <where>
+            <if test="name != null and name !=''">
+                e.name like concat('%', #{name}, '%')
+            </if>
+            <if test="gender != null">
+                and e.gender = #{gender}
+            </if>
+            <if test="begin != null and end != null">
+                and e.entry_date between #{begin} and #{end}
+            </if>
+        </where>
+        order by d.update_time desc
+        <if test="offset != null and pageSize != null">
+            limit #{offset}, #{pageSize};    
+        </if>
     </select>
+
+    <select id="getCount" resultType="java.lang.Integer">
+        select count(*) from emp
+        <where>
+            <if test="name != null and name !=''">
+                name like concat('%', #{name}, '%')
+            </if>
+            <if test="gender != null">
+                and gender = #{gender}
+            </if>
+            <if test="begin != null and end != null">
+                and entry_date between #{begin} and #{end}
+            </if>
+        </where>
+    </select>
+
+    <!--userGeneratekeys表示要使用主键, keyProperty指定要忘返回的类型中的哪个字段赋值-->
+    <insert id="insertEmp" useGeneratedKeys="true" keyProperty="id">
+        insert into emp (username, name, gender, phone, job, salary, image, entry_date, dept_id, create_time, update_time)
+        values (#{username}, #{name}, #{gender}, #{phone}, #{job}, #{salary}, #{image}, #{entryDate}, #{deptId}, now(), now());
+    </insert>
+
 </mapper>

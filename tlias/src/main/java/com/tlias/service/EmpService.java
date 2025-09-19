@@ -1,12 +1,16 @@
 package com.tlias.service;
 
 
+import com.tlias.pojo.Emp;
+import com.tlias.req.newEmpReq;
+import com.tlias.req.queryEmpPagedReq;
 import com.tlias.resp.QueryEmpResp;
 
 import java.time.LocalDate;
 
 public interface EmpService {
 
-    QueryEmpResp queryEmp(Integer pageNo, Integer pageSize, String name,
-                          Integer gender, LocalDate begin, LocalDate end);
+    QueryEmpResp queryEmp(queryEmpPagedReq req);
+
+    void saveEmp(newEmpReq req);
 }

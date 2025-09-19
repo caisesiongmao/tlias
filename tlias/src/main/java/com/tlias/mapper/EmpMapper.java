@@ -1,6 +1,7 @@
 package com.tlias.mapper;
 
 import com.tlias.pojo.Emp;
+import com.tlias.pojo.EmpExpr;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -23,6 +24,10 @@ public interface EmpMapper {
      * 获取员工数量
      * @return 员工数量
      */
-    @Select("select count(*) from emp")
-    Integer getCount();
+    Integer getCount(String name, Integer gender, LocalDate begin, LocalDate end);
+
+    
+    void insertEmp(Emp emp);
+
+
 }

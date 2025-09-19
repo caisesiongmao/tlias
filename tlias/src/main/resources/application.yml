@@ -13,3 +13,7 @@ mybatis:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     #开启驼峰命名规则转换
     map-underscore-to-camel-case: true
+
+logging:
+  level:
+    org.springframework.jdbc.support.JdbcTransactionManager: debug
