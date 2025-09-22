@@ -30,4 +30,5 @@ public interface EmpMapper {
     void insertEmp(Emp emp);
 
 
+    void deleteByIds(List<Integer> ids);
 }

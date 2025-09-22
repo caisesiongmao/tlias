@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @RestController
 @RequestMapping("/emp")
@@ -54,4 +55,13 @@ public class EmpController {
             return Result.error("上传失败");
         }
     }
+
+    @DeleteMapping
+    public Result delete (@RequestParam List<Integer> ids) {
+        log.info("delete, ids:{}", ids);
+        empService.delete(ids);
+        return Result.success(null);
+    }
+
+
 }

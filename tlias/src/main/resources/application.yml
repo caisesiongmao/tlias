@@ -23,6 +23,10 @@ mybatis:
 logging:
   level:
     org.springframework.jdbc.support.JdbcTransactionManager: debug
-
+aliyun:
+  oss:
+    endpoint: oss-cn-beijing.aliyuncs.com
+    bucketName: shiyu-tlias
+    region: cn-beijing
 ##LTAI5tAstP49DVJjYd1mfMhK
 ##cGM1bMGxWj15V8d4rYipjteYOeq8EX
