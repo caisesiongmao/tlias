@@ -1,12 +1,11 @@
 package com.tlias.service;
 
 
-import com.tlias.pojo.Emp;
 import com.tlias.req.newEmpReq;
 import com.tlias.req.queryEmpPagedReq;
 import com.tlias.resp.QueryEmpResp;
+import com.tlias.resp.UpdateEmpResp;
 
-import java.time.LocalDate;
 import java.util.List;
 
 public interface EmpService {
@@ -16,4 +15,6 @@ public interface EmpService {
     void saveEmp(newEmpReq req);
 
     void delete(List<Integer> ids);
+
+    UpdateEmpResp queryEmpById(Integer id);
 }

@@ -63,5 +63,9 @@ public class EmpController {
         return Result.success(null);
     }
 
-
+    @GetMapping("/queryEmpById")
+    public Result queryEmpById(Integer id) {
+        log.info("queryEmpById, id:{}", id);
+        return Result.success(empService.queryEmpById(id));
+    }
 }

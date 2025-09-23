@@ -7,19 +7,15 @@ import com.tlias.pojo.EmpExpr;
 import com.tlias.req.newEmpReq;
 import com.tlias.req.queryEmpPagedReq;
 import com.tlias.resp.QueryEmpResp;
+import com.tlias.resp.UpdateEmpResp;
 import com.tlias.service.EmpService;
-import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
-import org.springframework.web.multipart.MultipartFile;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -67,5 +63,10 @@ public class EmpServiceImpl implements EmpService {
             empExprMapper.deleteByEmpIds(ids);
             empMapper.deleteByIds(ids);
         }
+    }
+
+    @Override
+    public UpdateEmpResp queryEmpById(Integer id) {
+        return empMapper.queryEmpById(id);
     }
 }

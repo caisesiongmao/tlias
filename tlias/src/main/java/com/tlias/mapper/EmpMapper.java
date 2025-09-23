@@ -2,6 +2,7 @@ package com.tlias.mapper;
 
 import com.tlias.pojo.Emp;
 import com.tlias.pojo.EmpExpr;
+import com.tlias.resp.UpdateEmpResp;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -10,6 +11,13 @@ import java.util.List;
 
 @Mapper
 public interface EmpMapper {
+
+    /**
+     * 修改员工查询回显
+     * @param id
+     * @return
+     */
+    UpdateEmpResp queryEmpById(Integer id);
 
     /**
      * 分页查询员工信息
