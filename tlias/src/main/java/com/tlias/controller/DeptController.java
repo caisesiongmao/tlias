@@ -2,6 +2,7 @@ package com.tlias.controller;
 
 import com.tlias.pojo.Dept;
 import com.tlias.pojo.Result;
+import com.tlias.resp.JobCountStatisticResp;
 import com.tlias.service.DeptService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,5 +49,12 @@ public class DeptController {
         log.info("更新部门, dept:{}", dept);
         deptService.update(dept);
         return Result.success();
+    }
+
+    @GetMapping("/jobCountStatistic")
+    public Result jobCountStatistic(){
+        log.info("统计部门人数");
+        JobCountStatisticResp jobCountStatisticResp = deptService.jobCountStatic();
+        return Result.success(jobCountStatisticResp);
     }
 }

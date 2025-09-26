@@ -15,13 +15,13 @@ public class Result {
     }
     public static Result error(String msg){
         Result result = new Result();
-        result.code = 0;
+        result.code = 1;
         result.msg = msg;
         return result;
     }
     public static Result success(){
         Result result = new Result();
-        result.code = 1;
+        result.code = 0;
         result.msg = "success";
         return result;
     }

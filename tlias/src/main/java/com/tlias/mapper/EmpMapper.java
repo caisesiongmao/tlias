@@ -39,4 +39,8 @@ public interface EmpMapper {
 
 
     void deleteByIds(List<Integer> ids);
+
+    void updateEmp(Emp emp);
+
+    Integer selectCountByDeptId(Integer deptId);
 }

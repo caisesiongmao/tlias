@@ -31,6 +31,45 @@
         </collection>
 
     </resultMap>
+    <update id="updateEmp">
+        update emp
+        <set>
+            <if test="username != null">
+                username = #{username},
+            </if>
+            <if test="password != null">
+                password = #{password},
+            </if>
+            <if test="name != null">
+                name = #{name},
+            </if>
+            <if test="gender != null">
+                gender = #{gender},
+            </if>
+            <if test="phone != null">
+                phone = #{phone},
+            </if>
+            <if test="job != null">
+                job = #{job},
+            </if>
+            <if test="salary != null">
+                salary = #{salary},
+            </if>
+            <if test="image != null">
+                image = #{image},
+            </if>
+            <if test="entryDate != null">
+                entry_date = #{entryDate},
+            </if>
+            <if test="deptId != null">
+                dept_id = #{deptId},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
 
     <select id="queryEmpById" resultMap="updateEmpMap">
         select
@@ -78,6 +117,9 @@
                 and entry_date between #{begin} and #{end}
             </if>
         </where>
+    </select>
+    <select id="selectCountByDeptId" resultType="java.lang.Integer">
+        select count(*) from emp where dept_id = #{deptId};
     </select>
 
     <!--userGeneratekeys表示要使用主键, keyProperty指定要忘返回的类型中的哪个字段赋值-->

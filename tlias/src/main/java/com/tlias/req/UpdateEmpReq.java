@@ -11,7 +11,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class updateEmpReq {
+public class UpdateEmpReq {
 
     private Emp emp;
 

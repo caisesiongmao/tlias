@@ -1,18 +1,17 @@
 package com.tlias.controller;
 
 import com.tlias.pojo.Result;
-import com.tlias.req.newEmpReq;
-import com.tlias.req.queryEmpPagedReq;
+import com.tlias.req.NewEmpReq;
+import com.tlias.req.QueryEmpPagedReq;
+import com.tlias.req.UpdateEmpReq;
 import com.tlias.resp.QueryEmpResp;
 import com.tlias.service.EmpService;
 import com.tlias.utils.aliyunUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.time.LocalDate;
 import java.util.List;
 
 @RestController
@@ -27,7 +26,7 @@ public class EmpController {
     private aliyunUtils aliyunUtils;
 
     @GetMapping
-    public Result queryEmpPaged(@RequestBody queryEmpPagedReq req) {
+    public Result queryEmpPaged(@RequestBody QueryEmpPagedReq req) {
         log.info("queryEmp, pageNo:{}, pageSize:{}, name:{}, gender:{}, begin:{}, end:{}", req.getPageNo(), req.getPageSize(), req.getName(),
                 req.getGender(), req.getBegin(), req.getEnd());
         QueryEmpResp resp = empService.queryEmp(req);
@@ -36,7 +35,7 @@ public class EmpController {
     }
 
     @PostMapping
-    public Result saveEmp(@RequestBody newEmpReq req) {
+    public Result saveEmp(@RequestBody NewEmpReq req) {
         log.info("saveEmp, req:{}", req);
         empService.saveEmp(req);
         return Result.success(null);
@@ -67,5 +66,12 @@ public class EmpController {
     public Result queryEmpById(Integer id) {
         log.info("queryEmpById, id:{}", id);
         return Result.success(empService.queryEmpById(id));
+    }
+
+    @PostMapping("/updateEmp")
+    public Result updateEmp(@RequestBody UpdateEmpReq req) {
+        log.info("updateEmp, req:{}", req);
+        empService.updateEmp(req);
+        return Result.success(null);
     }
 }

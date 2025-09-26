@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class queryEmpPagedReq {
+public class QueryEmpPagedReq {
 
     private Integer pageNo;
 

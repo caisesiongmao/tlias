@@ -2,6 +2,7 @@ package com.tlias.service;
 
 
 import com.tlias.pojo.Dept;
+import com.tlias.resp.JobCountStatisticResp;
 
 import java.util.List;
 
@@ -15,4 +16,6 @@ public interface DeptService {
     Dept getById(Integer id);
 
     void update(Dept dept);
+
+    JobCountStatisticResp jobCountStatic();
 }
