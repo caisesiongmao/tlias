@@ -19,7 +19,10 @@ buildNumber.properties
 /dataSources.local.xml
 
 # IDE配置文件（根据你使用的IDE添加，保留需要的）
-.idea/         # IntelliJ IDEA
+.idea/
+
+
+
 *.iml          # IDEA模块文件
 *.iws          # IDEA工作区文件
 *.ipr          # IDEA项目文件
