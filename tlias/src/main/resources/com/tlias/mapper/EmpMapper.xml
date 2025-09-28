@@ -29,7 +29,6 @@
             <result column="ee_job" property="job" />
             <result column="ee_company" property="company" />
         </collection>
-
     </resultMap>
     <update id="updateEmp">
         update emp
@@ -127,5 +126,12 @@
         insert into emp (username, name, gender, phone, job, salary, image, entry_date, dept_id, create_time, update_time)
         values (#{username}, #{name}, #{gender}, #{phone}, #{job}, #{salary}, #{image}, #{entryDate}, #{deptId}, now(), now());
     </insert>
+
+    <select id="empGenderStatistic" resultType="com.tlias.pojo.EmpGenderStatistic">
+        SELECT
+        IF(gender = 1, '男性员工', '女性员工') AS name,
+        COUNT(*) AS value
+        FROM emp GROUP BY gender;
+    </select>
 
 </mapper>

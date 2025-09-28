@@ -74,4 +74,10 @@ public class EmpController {
         empService.updateEmp(req);
         return Result.success(null);
     }
+
+    @GetMapping("/empGenderStatistic")
+    public Result empGenderStatistic() {
+        log.info("empGenderStatistic");
+        return Result.success(empService.empGenderStatistic());
+    }
 }

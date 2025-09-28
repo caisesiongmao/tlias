@@ -2,6 +2,7 @@ package com.tlias.mapper;
 
 import com.tlias.pojo.Emp;
 import com.tlias.pojo.EmpExpr;
+import com.tlias.pojo.EmpGenderStatistic;
 import com.tlias.resp.UpdateEmpResp;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
@@ -43,4 +44,6 @@ public interface EmpMapper {
     void updateEmp(Emp emp);
 
     Integer selectCountByDeptId(Integer deptId);
+
+    List<EmpGenderStatistic> empGenderStatistic();
 }

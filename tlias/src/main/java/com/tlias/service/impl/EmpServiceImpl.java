@@ -4,6 +4,7 @@ import com.tlias.mapper.EmpExprMapper;
 import com.tlias.mapper.EmpMapper;
 import com.tlias.pojo.Emp;
 import com.tlias.pojo.EmpExpr;
+import com.tlias.pojo.EmpGenderStatistic;
 import com.tlias.req.NewEmpReq;
 import com.tlias.req.QueryEmpPagedReq;
 import com.tlias.req.UpdateEmpReq;
@@ -88,5 +89,10 @@ public class EmpServiceImpl implements EmpService {
             empExprMapper.deleteByEmpIds(ids);
             empExprMapper.batchInsertEmpExpr(empExprs);
         }
+    }
+
+    @Override
+    public List<EmpGenderStatistic> empGenderStatistic() {
+        return empMapper.empGenderStatistic();
     }
 }
