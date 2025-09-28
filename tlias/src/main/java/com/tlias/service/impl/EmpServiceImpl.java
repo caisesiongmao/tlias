@@ -5,12 +5,14 @@ import com.tlias.mapper.EmpMapper;
 import com.tlias.pojo.Emp;
 import com.tlias.pojo.EmpExpr;
 import com.tlias.pojo.EmpGenderStatistic;
+import com.tlias.pojo.LoginInfo;
 import com.tlias.req.NewEmpReq;
 import com.tlias.req.QueryEmpPagedReq;
 import com.tlias.req.UpdateEmpReq;
 import com.tlias.resp.QueryEmpResp;
 import com.tlias.resp.UpdateEmpResp;
 import com.tlias.service.EmpService;
+import com.tlias.utils.JWTUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,8 +20,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 @Service
 @Slf4j
@@ -95,4 +96,32 @@ public class EmpServiceImpl implements EmpService {
     public List<EmpGenderStatistic> empGenderStatistic() {
         return empMapper.empGenderStatistic();
     }
+
+    @Override
+    public LoginInfo login(Emp emp) {
+        if(Objects.nonNull(emp) && Objects.nonNull(emp.getPassword()) && Objects.nonNull(emp.getUsername())){
+            Emp e = empMapper.selectEmpByUsernameAndPassword(emp.getUsername(), emp.getPassword());
+            if(Objects.isNull(e)){
+                log.error("username is not exist or password wrong, username:{},password:{}",emp.getUsername(),emp.getPassword());
+                return null;
+            }
+            LoginInfo loginInfo = new LoginInfo();
+            Map<String, Object> claims = new HashMap<>();
+            claims.put("id", e.getId());
+            claims.put("username", e.getUsername());
+            claims.put("password", e.getPassword());
+            claims.put("name", e.getName());
+
+            loginInfo.setId(e.getId());
+            loginInfo.setName(e.getName());
+            loginInfo.setPassword(e.getPassword());
+            loginInfo.setUserName(e.getUsername());
+            loginInfo.setToken(JWTUtils.generateJWT(claims));
+            log.info("login success, resp:{}", loginInfo);
+            return loginInfo;
+        }
+        log.error("login param illegal");
+        return null;
+    }
+
 }

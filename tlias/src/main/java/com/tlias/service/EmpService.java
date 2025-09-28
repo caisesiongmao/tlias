@@ -1,7 +1,9 @@
 package com.tlias.service;
 
 
+import com.tlias.pojo.Emp;
 import com.tlias.pojo.EmpGenderStatistic;
+import com.tlias.pojo.LoginInfo;
 import com.tlias.req.NewEmpReq;
 import com.tlias.req.QueryEmpPagedReq;
 import com.tlias.req.UpdateEmpReq;
@@ -23,4 +25,6 @@ public interface EmpService {
     void updateEmp(UpdateEmpReq req);
 
     List<EmpGenderStatistic> empGenderStatistic();
+
+    LoginInfo login(Emp emp);
 }

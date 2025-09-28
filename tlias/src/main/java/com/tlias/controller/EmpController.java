@@ -6,7 +6,7 @@ import com.tlias.req.QueryEmpPagedReq;
 import com.tlias.req.UpdateEmpReq;
 import com.tlias.resp.QueryEmpResp;
 import com.tlias.service.EmpService;
-import com.tlias.utils.aliyunUtils;
+import com.tlias.utils.AliyunUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -23,7 +23,7 @@ public class EmpController {
     private EmpService empService;
 
     @Autowired
-    private aliyunUtils aliyunUtils;
+    private AliyunUtils aliyunUtils;
 
     @GetMapping
     public Result queryEmpPaged(@RequestBody QueryEmpPagedReq req) {

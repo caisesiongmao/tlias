@@ -133,5 +133,16 @@
         COUNT(*) AS value
         FROM emp GROUP BY gender;
     </select>
+    <select id="selectEmpByUsernameAndPassword" resultType="com.tlias.pojo.Emp">
+        select id, username, name, password from emp
+        <where>
+            <if test="username != null">
+                username = #{username}
+            </if>
+            <if test="password != null">
+                and password = #{password}
+            </if>
+        </where>
+    </select>
 
 </mapper>

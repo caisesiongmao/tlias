@@ -46,4 +46,6 @@ public interface EmpMapper {
     Integer selectCountByDeptId(Integer deptId);
 
     List<EmpGenderStatistic> empGenderStatistic();
+
+    Emp selectEmpByUsernameAndPassword(String username, String password);
 }

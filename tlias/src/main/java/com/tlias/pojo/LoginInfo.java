@@ -16,4 +16,6 @@ public class LoginInfo {
     private String name;
 
     private String password;
+
+    private String token;
 }
